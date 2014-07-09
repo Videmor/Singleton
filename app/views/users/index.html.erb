@@ -1,0 +1,10 @@
+<%= link_to 'Activar Instance', active_users_path %>
+<%= link_to 'Desactivar Instance', desactive_users_path %>
+
+
+Instance:
+<% if User.instance.name.present? %>
+  Se encuentra ready la instancia
+<% else %>
+  No se encuentra ready la instancia
+<% end %>
